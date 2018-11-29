@@ -19,7 +19,6 @@ public class MyController1 {
 	public ModelAndView remmeberMe1(@SessionAttribute("MyModel") MyModel m,  MyModel2 m2) {
 		
 		 ModelAndView mv = new ModelAndView();
-		 mv.addObject("MyModel", m);
 		 mv.addObject("t",m2);
          mv.setViewName("welcome1");
          return mv;

@@ -18,8 +18,6 @@ public class MyController2 {
 	@RequestMapping(value="/check2", method= RequestMethod.POST)
 	public ModelAndView remmeberMe2(@SessionAttribute("MyModel") MyModel m1,@SessionAttribute("t") MyModel2 m2) {
 		ModelAndView mv = new ModelAndView();
-		 mv.addObject("MyModel", m1);
-		 mv.addObject("t", m2);
         mv.setViewName("welcome3");
         return mv;
 	
